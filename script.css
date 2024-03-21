@@ -1,0 +1,120 @@
+/* 初めの難易度選択のページのレイアウト */
+body {
+  background-color: grey;
+}
+
+#title {
+  background-color: black;
+  color: white;
+
+}
+
+#degree {
+  color: darkslategray;
+}
+
+#button1 {
+  background-color: darkorange;
+  width: 150px;
+}
+
+#easy {
+  color: yellow;
+  font-size: 150%;
+}
+
+#button2 {
+  background-color: red;
+  width: 150px;
+}
+
+#hard {
+  color: darkred;
+  font-size: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+/* easy,hardのページのレイアウト */
+#question1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#question2 {
+  /* width: 500px;
+  height: 100px;
+  margin-left: 200px;
+  margin-right: 200px; */
+  height: 100px;
+  font-size: 200%;
+  text-align: center;
+}
+
+#input1 {
+  background-color: darkgrey;
+  border: solid 3px #333;
+
+  width: 50%;
+  height: 300px;
+  margin-left: 25%;
+  margin-right: 25%;
+
+  text-align: center;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+#oneMore {
+  border: solid 2px #752100;
+  background-color: #ea5506;
+}
+
+#button {
+  width: 50%;
+  height: 100px;
+  margin-left: 42%;
+  margin-right: 45%;
+}
+
+#oneMoreString {
+  color: #e2041b;
+}
+
+#changeDegree {
+  border: solid 2px #1e50a2;
+  background-color: #007bbb;
+}
+
+#changeDegreeString {
+  color: #0f2350;
+}
+
+#false {
+  color: red;
+
+  font-size: 350%;
+  text-align: center;
+}
+
+#string {
+  width: 100%;
+  text-align: center;
+  font-size: 300%;
+  font-weight: bold;
+}
+#score {
+  width: 100%;
+  text-align: center;
+  font-size: 300%;
+  font-weight: bold;
+
+}
