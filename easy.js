@@ -34,6 +34,7 @@ function enterKeyPress(event) {
       tapPerSec = tapPerSec / 100;
       score.innerText = `${i}個正解です!!`;   // 点数 
       string.innerText = `${tapPerSec} tap/secです。`;
+      question.textContent = "~~終了~~";
     }, 30000);
 
   }
