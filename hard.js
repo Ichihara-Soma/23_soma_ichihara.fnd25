@@ -36,7 +36,6 @@ function pageLoad() {
 function enterKeyPress(event) {
   //タイマー(30秒)
   const string = document.getElementById("string");
-  
   const score = document.getElementById("score");
 
   if (num === 1) {
@@ -46,6 +45,7 @@ function enterKeyPress(event) {
       tapPerSec = tapPerSec / 100;
       score.innerText = `${i}個正解です!!`;   // 点数 
       string.innerText = `${tapPerSec} tap/secです。`;
+      question.textContent = "~~終了~~";
     }, 30000);
 
   }
