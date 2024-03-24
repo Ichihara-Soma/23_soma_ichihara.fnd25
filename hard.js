@@ -6,6 +6,8 @@
 let i = 0;
 let num = 1;
 let keytapNum = 0;
+let stopping = 0;
+
 // page2のコード
 const degree = document.getElementById("")
 const questionArray = [
@@ -45,6 +47,7 @@ function enterKeyPress(event) {
       tapPerSec = tapPerSec / 100;
       score.innerText = `${i}個正解です!!`;   // 点数 
       string.innerText = `${tapPerSec} tap/secです。`;
+      stopping = 1;
       question.textContent = "~~終了~~";
     }, 30000);
 
@@ -52,14 +55,13 @@ function enterKeyPress(event) {
 
   mis.textContent = "";   //次の問題の
 
-  if (event.key === `Enter`) {
+  if (event.key === `Enter` && stopping === 0) {
     const text = document.getElementById("input1").value;   //inputの中身の取得
     if (text !== randomQuestion) {
       mis.textContent = "不正解!!次の問題は頑張って！";
     } else {
       mis.textContent = "正解!!";
       i += 1;
-      console.log(i);
     }
     document.getElementById("input1").value = "";           //フォームの中身の削除
     randomQuestion = questionArray[Math.floor(Math.random() * questionNum     )]
@@ -69,5 +71,3 @@ function enterKeyPress(event) {
 
 }
 
-// const score = document.getElementById("score");
-// score.textContent = "ああああ";
